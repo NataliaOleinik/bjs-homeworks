@@ -29,6 +29,6 @@ function checkBirthday(birthday) {
     let now =  Date.now();
     birthday = new Date(birthday);
     let diff = now - birthday;
-    let age = diff/31557600000;
+    let age = diff / (((365 * 3 + 366) / 4) * 1000 * 60 * 60 * 24);
     return verdict = Math.floor(age);
 }
