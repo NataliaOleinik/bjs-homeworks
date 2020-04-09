@@ -29,6 +29,7 @@ function checkBirthday(birthday) {
     let now =  Date.now();
     birthday = new Date(birthday);
     let diff = now - birthday;
-    let age = diff / (((365 * 3 + 366) / 4) * 1000 * 60 * 60 * 24);
-    return verdict = Math.floor(age);
+    let age = diff / ((((365 * 13) + (366 * 5)) / 18) * 1000 * 60 * 60 * 24);
+    // return verdict = Math.floor(age);
+    return verdict = (Math.floor(age) >= 18) ? true : false; 
 }
