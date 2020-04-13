@@ -11,7 +11,7 @@ describe('Домашнее задание к занятию 2.3 «ООП в JS (
       range: 1,
     });
 
-    studentLog = new StudentLog("Иван Петров");
+    // studentLog = new StudentLog("Иван Петров");
   }) 
 
   it('Задача №1 Создание простого оружия', () => {
